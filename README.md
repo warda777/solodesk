@@ -38,7 +38,7 @@ Passwort: 123456
 src/
 ├─ main/
 │ ├─ java/com.warda.solodesk/ → Controller, Modelle, Views
-│ ├─ resources/ → FXML, CSS, Bilder
+│ ├─ resources/ → FXML, Images, Styles
 ├─ test/ → Unit-Tests
 pom.xml → Maven-Konfiguration
 solodesk.db → SQLite-Datenbank
