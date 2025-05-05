@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<?import java.lang.String?>
+<VBox spacing="15.0" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.warda.solodesk.Controllers.Main.AddPaymentController"
+      stylesheets="@../../Styles/AddForm.css">
+
+    <Label text="Neue Zahlung hinzufügen" styleClass="form-title"/>
+
+    <ComboBox fx:id="clientCombo" promptText="Kunde auswählen"/>
+    <DatePicker fx:id="datePicker" promptText="Zahlungsdatum"/>
+    <TextField fx:id="amountField" promptText="Betrag"/>
+    <ComboBox fx:id="methodCombo" promptText="Zahlungsmethode">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Überweisung"/>
+                <String fx:value="Bar"/>
+                <String fx:value="PayPal"/>
+                <String fx:value="Karte"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="noteField" promptText="Notiz (optional)"/>
+
+    <Button text="Speichern" onAction="#onSave"/>
+</VBox>

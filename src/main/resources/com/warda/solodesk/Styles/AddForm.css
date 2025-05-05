@@ -1,0 +1,96 @@
+.root {
+    -fx-background-color: #F8F9FA;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-font-family: "Calibri Light";
+}
+
+/* Titel */
+.form-title {
+    -fx-font-size: 1.6em;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+/* Eingabefelder */
+.combo-box,
+.date-picker,
+.text-field {
+    -fx-pref-width: 250;
+    -fx-pref-height: 35;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-font-size: 1em;
+}
+
+/* Spezifisch für Dropdown (ComboBox): Grau wie „Neue Zahlung“ */
+.combo-box {
+    -fx-background-color: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+    -fx-border-color: #aaaaaa;
+}
+
+/* Für DatePicker und Textfelder wie bei „Neue Rechnung“ */
+.text-field,
+.date-picker {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D1D1;
+}
+
+/* Platzhalter-Text */
+.combo-box .text,
+.text-field .text,
+.date-picker .text {
+    -fx-fill: #666666;
+}
+
+/* Kalender-Popup Kopfbereich: Monat + Jahr + Pfeile */
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #2C3E50; /* dunkelblauer Hintergrund */
+}
+
+/* Monat ("April") und Jahr ("2025") im Kalender-Kopfbereich */
+.date-picker-popup .spinner .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+/* Pfeil-Buttons links/rechts */
+.date-picker-popup .spinner .left-arrow,
+.date-picker-popup .spinner .right-arrow,
+.date-picker-popup .spinner .button .arrow {
+    -fx-background-color: white; /* Pfeile in weiß */
+}
+
+/* Optional: Datumsauswahl optisch angleichen */
+.date-picker-popup .calendar-grid {
+    -fx-background-color: white;
+}
+
+.date-picker-popup .calendar-grid .day-cell {
+    -fx-text-fill: #2C3E50;
+}
+
+.date-picker-popup .calendar-grid .day-cell:hover {
+    -fx-background-color: #E6F0FA;
+}
+
+.date-picker-popup .calendar-grid .day-cell:focused {
+    -fx-border-color: #2C3E50;
+    -fx-border-width: 1;
+}
+
+/* Button */
+.button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #3E556E;
+}

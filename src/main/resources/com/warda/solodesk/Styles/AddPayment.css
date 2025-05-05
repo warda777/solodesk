@@ -1,0 +1,28 @@
+/* AddPayment.css */
+
+.root {
+    -fx-padding: 20;
+    -fx-background-color: #FFFFFF;
+    -fx-spacing: 15;
+}
+
+.form-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+    -fx-padding: 0 0 10 0;
+}
+
+.combo-box, .date-picker, .text-field {
+    -fx-pref-width: 250;
+    -fx-background-radius: 4;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-pref-width: 150;
+}

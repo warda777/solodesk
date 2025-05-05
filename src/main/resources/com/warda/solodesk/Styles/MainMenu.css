@@ -1,0 +1,72 @@
+/* Gesamter Bereich (links) */
+.main_menu_container {
+    -fx-background-color: #F5F5F5;
+    -fx-alignment: center;
+    -fx-padding: 0 10 0 10;
+}
+
+/* Hauptbereich im Menü */
+.left_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(two-pass-box, #BBBBBB, 5, 0, 0, 4);
+}
+
+/* Titel / App-Name */
+.title_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20 20 0 0;
+    -fx-alignment: top_center;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+.title_container Text {
+    -fx-fill: #132A13;
+    -fx-font-size: 1.6em;
+    -fx-font-weight: bold;
+}
+
+/* Hauptmenü-Buttons */
+.menu_container {
+    -fx-padding: 10 10 10 20;
+    -fx-spacing: 15;
+}
+
+.menu_container Button {
+    -fx-pref-width: 140;
+    -fx-pref-height: 40;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, #E0E0E0, 2, 0, 0, 1);
+}
+
+.menu_container Button:hover {
+    -fx-background-color: #D6EAF8;
+    -fx-cursor: hand;
+}
+
+/* Trennlinie optional */
+.menu_container Line {
+    -fx-stroke: #CCCCCC;
+    -fx-stroke-width: 1;
+}
+
+/* Zusatzmenü: Profil + Logout */
+.alt_menu_btn {
+    -fx-pref-width: 140;
+    -fx-pref-height: 40;
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-background-radius: 8;
+}
+
+.alt_menu_btn:hover {
+    -fx-background-color: #3D566E;
+    -fx-cursor: hand;
+}

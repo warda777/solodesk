@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      fx:controller="com.warda.solodesk.Controllers.Main.PaymentsController"
+      spacing="20.0"
+      stylesheets="@../../Styles/Payments.css">
+
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+    </padding>
+
+    <!-- Titel -->
+    <Label text="Zahlungen" styleClass="title-label" />
+
+    <!-- Tabelle -->
+    <TableView fx:id="payments_table" prefHeight="600">
+        <columns>
+            <TableColumn fx:id="col_id" text="ID" prefWidth="30"/>
+            <TableColumn fx:id="col_client" text="Kunde" prefWidth="150"/>
+            <TableColumn fx:id="col_date" text="Zahlungsdatum" prefWidth="120"/>
+            <TableColumn fx:id="col_amount" text="Betrag (€)" prefWidth="100"/>
+            <TableColumn fx:id="col_method" text="Methode" prefWidth="100"/>
+            <TableColumn fx:id="col_note" text="Notiz" prefWidth="290"/>
+        </columns>
+    </TableView>
+
+    <!-- Button -->
+    <Button fx:id="add_payment_btn"
+            text="Zahlung hinzufügen"
+            styleClass="add-button"
+            prefWidth="250" prefHeight="40" />
+</VBox>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            fx:controller="com.warda.solodesk.Controllers.Main.ProfileController"
+            stylesheets="@../../Styles/Profile.css">
+
+    <VBox spacing="20" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20">
+
+        <!-- Titel -->
+        <Label text="Mein Profil" styleClass="profile-title"/>
+
+        <!-- Benutzername -->
+        <HBox spacing="10">
+            <Label text="Benutzername:" styleClass="text-label"/>
+            <Label fx:id="usernameLabel" styleClass="text-label"/>
+        </HBox>
+
+        <!-- Rolle -->
+        <HBox spacing="10">
+            <Label text="Rolle:" styleClass="text-label"/>
+            <Label text="Admin" styleClass="text-label"/>
+        </HBox>
+
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      fx:controller="com.warda.solodesk.Controllers.Main.InvoicesController"
+      spacing="20.0"
+      stylesheets="@../../Styles/Invoices.css">
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+    </padding>
+
+    <!-- Titel -->
+    <Label text="Rechnungen" styleClass="title-label" />
+
+    <!-- Tabelle -->
+    <TableView fx:id="invoices_table" prefHeight="600">
+        <columns>
+            <TableColumn fx:id="col_id" text="ID" prefWidth="30"/>
+            <TableColumn fx:id="col_client" text="Kunde" prefWidth="150"/>
+            <TableColumn fx:id="col_date" text="Rechnungsdatum" prefWidth="120"/>
+            <TableColumn fx:id="col_amount" text="Betrag (€)" prefWidth="100"/>
+            <TableColumn fx:id="col_status" text="Status" prefWidth="100"/>
+            <TableColumn fx:id="col_description" text="Beschreibung" prefWidth="290"/>
+        </columns>
+    </TableView>
+
+    <!-- Button -->
+    <Button fx:id="add_invoice_btn"
+            text="Rechnung hinzufügen"
+            styleClass="add-button"
+            prefWidth="250" prefHeight="40"/>
+</VBox>

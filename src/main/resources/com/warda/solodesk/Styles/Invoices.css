@@ -1,0 +1,57 @@
+/* Gesamter Bereich */
+.root {
+    -fx-background-color: #f9f9f9;
+}
+
+/* Titelüberschrift */
+.title-label {
+    -fx-font-size: 1.6em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+/* Tabelle */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-table-cell-border-color: #e0e0e0;
+    -fx-padding: 10;
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* Tabellenzeile - Hover-Effekt */
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-font-size: 1.1em;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #E6F0FA; /* Hellblau bei Mouseover */
+}
+
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #C0DFF7; /* Auswahlfarbe */
+}
+
+/* Zellrahmen komplett unsichtbar machen */
+.table-view .table-cell {
+    -fx-border-color: transparent;
+}
+
+/* Button zum Hinzufügen */
+.add-button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-size: 1.1em;
+    -fx-background-radius: 6;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.add-button:hover {
+    -fx-background-color: #3D566E;
+}

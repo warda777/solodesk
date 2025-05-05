@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15.0" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.warda.solodesk.Controllers.Main.AddClientController"
+      stylesheets="@../../Styles/AddClient.css">
+
+    <Label text="Neuen Kunden hinzufügen" styleClass="form-title"/>
+
+    <TextField fx:id="firstNameField" promptText="Vorname"/>
+    <TextField fx:id="lastNameField" promptText="Nachname"/>
+    <TextField fx:id="usernameField" promptText="Benutzername"/>
+    <TextField fx:id="companyField" promptText="Firma (optional)"/>
+    <TextField fx:id="phoneField" promptText="Telefon (optional)"/>
+    <TextField fx:id="emailField" promptText="E-Mail (optional)"/>
+
+    <Button text="Speichern" onAction="#onSave" styleClass="add-button"/>
+</VBox>

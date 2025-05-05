@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.warda.solodesk.Controllers.Main.ClientsController"
+      spacing="20.0"
+      stylesheets="@../../Styles/Clients.css">
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+    </padding>
+
+    <!-- Titel -->
+    <Label text="Kundenverwaltung" styleClass="title-label"/>
+
+    <!-- Tabelle -->
+    <TableView fx:id="clients_table" prefHeight="600">
+        <columns>
+            <TableColumn fx:id="col_id" text="ID" prefWidth="30"/>
+            <TableColumn fx:id="col_firstname" text="Vorname" prefWidth="70"/>
+            <TableColumn fx:id="col_lastname" text="Nachname" prefWidth="80"/>
+            <TableColumn fx:id="col_username" text="Username" prefWidth="70"/>
+            <TableColumn fx:id="col_company" text="Firma" prefWidth="140"/>
+            <TableColumn fx:id="col_phone" text="Telefon" prefWidth="120"/>
+            <TableColumn fx:id="col_email" text="E-Mail" prefWidth="180"/>
+            <TableColumn fx:id="col_joined" text="Erstellt am" prefWidth="90"/>
+        </columns>
+    </TableView>
+
+    <!-- Button -->
+    <Button fx:id="add_client_btn"
+            text="Kunden hinzufügen"
+            styleClass="add-button"
+            prefWidth="250" prefHeight="40"/>
+</VBox>

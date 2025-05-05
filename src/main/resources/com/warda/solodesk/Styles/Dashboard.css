@@ -1,0 +1,68 @@
+.dashboard {
+    -fx-background-color: #EEEEEE;
+}
+
+.user_name {
+    -fx-font-size: 2.2em;
+    -fx-font-family: "Calibri Light";
+}
+
+.date_lbl {
+    -fx-text-fill: #999999;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+}
+
+.section_title {
+    -fx-font-size: 1.4em;
+    -fx-font-family: "Calibri Light";
+    -fx-fill: #333333;
+}
+
+/* Kachel-Container für Kennzahlen */
+.kpi_box {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5, 0, 0, 4);
+}
+
+.kpi_box Label {
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+    -fx-font-family: "Calibri Light";
+}
+
+.kpi_box Text {
+    -fx-font-size: 1.2em;
+    -fx-fill: #777777;
+    -fx-font-family: "Calibri Light";
+}
+
+/* Aktivitäten-Liste */
+.activity_listview {
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 3, 0, 0, 3);
+}
+
+.activity_listview .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-font-size: 1.2em;
+    -fx-padding: 10 5 10 5;
+    -fx-font-family: "Calibri Light";
+}
+
+.activity_listview .list-cell:filled:selected {
+    -fx-background-color: #DCE9F2;
+    -fx-text-fill: #2C3E50;
+}
+
+.activity_listview .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}

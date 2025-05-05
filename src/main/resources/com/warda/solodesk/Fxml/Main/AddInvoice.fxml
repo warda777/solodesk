@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<?import java.lang.String?>
+<VBox spacing="15.0" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.warda.solodesk.Controllers.Main.AddInvoiceController"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      stylesheets="@../../Styles/AddForm.css">
+    <Label text="Neue Rechnung hinzufügen" styleClass="form-title"/>
+
+    <ComboBox fx:id="clientCombo" promptText="Kunde auswählen"/>
+    <DatePicker fx:id="datePicker" promptText="Rechnungsdatum"/>
+    <TextField fx:id="amountField" promptText="Betrag"/>
+    <ComboBox fx:id="statusCombo" promptText="Status">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Offen"/>
+                <String fx:value="Bezahlt"/>
+                <String fx:value="Überfällig"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="descriptionField" promptText="Beschreibung"/>
+
+    <Button text="Speichern" onAction="#onSave"/>
+</VBox>

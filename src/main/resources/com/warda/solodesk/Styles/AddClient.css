@@ -1,0 +1,49 @@
+/* Gesamter Bereich */
+.root {
+    -fx-background-color: #F8F9FA;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-font-family: "Calibri Light";
+}
+
+/* Titel */
+.form-title {
+    -fx-font-size: 1.6em;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+}
+
+/* Felder */
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-pref-width: 250;
+    -fx-pref-height: 35;
+    -fx-background-radius: 6;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D1D1;
+    -fx-border-radius: 6;
+    -fx-font-size: 1em;
+}
+
+/* Platzhalter-Text */
+.text-field .text,
+.combo-box .text,
+.date-picker .text {
+    -fx-fill: #666666;
+}
+
+/* Button */
+.add-button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+}
+
+.add-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #3E556E;
+}

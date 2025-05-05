@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/Dashboard.css"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.warda.solodesk.Controllers.Main.DashboardController">
+
+    <!-- Begrüßung -->
+    <Text fx:id="user_name" layoutX="23.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          styleClass="user_name" text="Hallo, Admin!" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0" />
+    <Label fx:id="login_date" styleClass="date_lbl" text="Heute: 2025-04-17"
+           AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="27.0" />
+
+    <!-- Übersichtstitel -->
+    <Text layoutX="6.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          styleClass="section_title" text="Aktuelle Übersicht" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+
+    <!-- Kacheln für Kennzahlen -->
+    <HBox layoutX="20.0" layoutY="157.0" prefHeight="180.0" prefWidth="620.0" styleClass="accounts_view"
+          AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="120.0" spacing="20">
+
+        <!-- Kunden -->
+        <VBox prefHeight="150.0" prefWidth="180.0" styleClass="summary_tile">
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+                <Image url="@../../Images/user_b.png" />
+            </ImageView>
+            <Label text="Kunden" />
+            <Label fx:id="client_count" styleClass="dashboard_number" text="8" />
+        </VBox>
+
+        <!-- Offene Rechnungen -->
+        <VBox prefHeight="150.0" prefWidth="180.0" styleClass="summary_tile">
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+                <Image url="@../../Images/invoice.png" />
+            </ImageView>
+            <Label text="Offene Rechnungen" />
+            <Label fx:id="open_invoices" styleClass="dashboard_number" text="3" />
+        </VBox>
+
+        <!-- Zahlungseingänge -->
+        <VBox prefHeight="150.0" prefWidth="180.0" styleClass="summary_tile">
+            <ImageView fitHeight="30.0" fitWidth="30.0">
+                <Image url="@../../Images/money_b.png" />
+            </ImageView>
+            <Label text="Einnahmen (Monat)" />
+            <Label fx:id="monthly_income" styleClass="dashboard_number" text="4.750 €" />
+        </VBox>
+    </HBox>
+
+    <!-- Letzte Aktivitäten -->
+    <Text layoutX="16.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          styleClass="section_title" text="Letzte Aktivitäten" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="330.0" />
+    <ListView fx:id="activity_listview" layoutX="46.0" layoutY="448.0"
+              prefHeight="300.0" prefWidth="780.0" styleClass="activity_list"
+              AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" />
+
+</AnchorPane>
