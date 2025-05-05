@@ -3,7 +3,7 @@
 **SoloDesk** ist eine JavaFX-Desktopanwendung zur Verwaltung von Kunden, Rechnungen und Zahlungen.  
 Die Software wurde im Rahmen der Projektpräsentation im Studiengang Softwareentwicklung an der IU Internationale Hochschule entwickelt.
 
-## 📌 Funktionen
+## Funktionen
 - Login-System mit SQLite-Authentifizierung
 - Übersichtliches Dashboard mit Statistiken
 - Kundenverwaltung (Anlegen, Bearbeiten, Löschen)
@@ -11,14 +11,14 @@ Die Software wurde im Rahmen der Projektpräsentation im Studiengang Softwareent
 - SQLite-Datenbank-Anbindung
 - Modularer Aufbau mit JavaFX, FXML, CSS
 
-## 🛠️ Technologien
+## Technologien
 - Java 17
 - JavaFX 23-ea
 - SQLite
 - Maven
 - JUnit (für Tests)
 
-## ▶️ Projekt starten
+## Projekt starten
 
 ### Mit Maven:
 ```
@@ -27,12 +27,12 @@ mvn clean install
 mvn javafx:run
 ```
 
-## 🧪 Beispiel-Login
+## Beispiel-Login
 
 Benutzername: admin  
 Passwort: 123456
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```
 src/
