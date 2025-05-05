@@ -21,6 +21,30 @@ Die Software wurde im Rahmen der Projektpräsentation im Studiengang Softwareent
 ## ▶️ Projekt starten
 
 ### Mit Maven:
-```bash
+```
+bash
 mvn clean install
 mvn javafx:run
+```
+
+## 🧪 Beispiel-Login
+
+Benutzername: admin  
+Passwort: 123456
+
+## 📁 Projektstruktur
+
+```
+src/
+├─ main/
+│ ├─ java/com.warda.solodesk/ → Controller, Modelle, Views
+│ ├─ resources/ → FXML, CSS, Bilder
+├─ test/ → Unit-Tests
+pom.xml → Maven-Konfiguration
+solodesk.db → SQLite-Datenbank
+```
+## 🧾 Lizenz
+
+Dieses Projekt steht unter der MIT License.  
+Es darf frei genutzt, kopiert, verändert und weitergegeben werden – unter Angabe des Urhebers.
+
