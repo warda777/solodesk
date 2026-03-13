@@ -104,7 +104,8 @@ Password
 # Author
 
 Andreas Warda  
-Software Development Student
+Software Engineering (B.Sc.)  
+IU International University
 
 ---
 
